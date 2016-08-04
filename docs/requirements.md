@@ -9,7 +9,7 @@ Following outlines the technical requirements for an IXP to be certified by Open
 
 The keywords used throughout the document are as defined in RFC 2119.
 
-The IXP SHOULD follow the Best Current Operational Practices for an Internet Exchange, posted at <http://bcop.nanog.org>.
+The IXP SHOULD follow the Best Current Operational Practices for an Internet Exchange, posted at <http://nabcop.org/index.php/Main_Page>.
 
 
 ## Definition of an IXP.
@@ -57,6 +57,7 @@ If the IXP applies a MAC address locking mechanism on a participants port, then 
 ### Customer Interface
 The IXP MUST provide a clear demarcation point between the IXP services and the customer. This can be either directly on the exchange or via a common demarcation point available to the participants.
 
+
 ## Infrastructure
 ### Switching Platform
 The IXP switching platform MUST have backplane capacity to sufficiently handle the aggregate traffic of all customerfacing ports, without oversubscription. If individual switching elements contain multiple switch fabric modules, the same conditions MUST apply during single component failures.
@@ -76,6 +77,7 @@ In order to be independent of any of the connected parties, the IP space used on
 If a route server service is offered then it MUST support both IPv4 and IPv6 and 4byte ASNs. The AS number used for the route server implementation MUST be a unique AS number assigned by one of the RIRs.
 
 The IXP MUST publish the route server setup on a publicly available website.
+
 
 ## Operations
 ### NOC
