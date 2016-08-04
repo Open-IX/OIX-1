@@ -57,11 +57,7 @@ more than two parties the service MAY be best effort.
 ### Physical Interface
 
 The IXP MUST be able to offer IEEE 802.3 Ethernet connectivity on a common
-switch infrastructure. Service offerings MUST be available at least at the
-following IEEE defined rates:
-
-- 802.3z 1GE
-- 802.3ae 10GE
+switch infrastructure.
 
 Service offerings MAY be available at any other IEEE defined rate, including
 802.3ad link aggregation of any of these rates.
