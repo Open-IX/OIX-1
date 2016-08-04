@@ -144,7 +144,9 @@ The IXP MUST publish the route server setup on a publicly available website.
 The IXP MUST publish a telephone number, email address or any other means that
 provides immediate access to technical support, on a website available to its
 participants, on how to contact operational staff that is capable of managing
-the IXP infrastructure. The access method MUST be available 24x7.
+the IXP infrastructure. The access method MUST be available 24x7, note this
+does not mean staff needs to be available 24x7, but the IXP MUST publish staff
+hours.
 
 The IXP MUST provide and publish a procedure to announce service affecting
 maintenance to its participants.
