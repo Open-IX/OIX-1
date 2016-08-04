@@ -179,5 +179,5 @@ least the subjects mentioned in this document MUST be addressed.
 ## Miscellaneous
 
 The IXP MUST have and maintain an accurate entry in a peering contact and
-configuration directory.
+configuration directory. This entry MUST contain a list of all facilities they are present at.
 
