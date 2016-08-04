@@ -34,8 +34,7 @@ clear and open policy for others to join.
 ### Minimal Service Offering
 
 The IXP MUST provide the services described below. This in no way inhibits the
-operator from providing additional services, or methods of interconnection, as
-long as they are described on the publicly available website of the IXP.
+operator from providing additional services, or methods of interconnection.
 
 #### Public Exchange VLAN (IX)
 
@@ -43,14 +42,17 @@ A switch platform which allows anytoany interconnection. Customer interfaces
 with Ethernet frames tagged for the public exchange VLAN MUST be forwarded in
 accordance with the traffic rules indicated in this document.
 
+### Additional Service Offering
+The IXP MAY provide additional services, as long as they are described on a publicly available website of the IXP.
+
 #### Private VLAN (PVLAN)
 
 A private switch platform, whereby any two or more parties may consent to
 interconnect through either the same physical port that delivers their access
-to the Public Exchange VLAN or alternatively dedicated physical port(s). In
-case there are exactly two parties in the private VLAN the connection MUST be
-delivered guaranteed congestion free. In case of more than two parties the
-service MAY be best effort.
+to the Public Exchange VLAN or alternatively dedicated physical port(s). If a
+PVLAN service is offered, in case there are exactly two parties in the private
+VLAN the connection MUST be delivered guaranteed congestion free. In case of
+more than two parties the service MAY be best effort.
 
 ### Physical Interface
 
