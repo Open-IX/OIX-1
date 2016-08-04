@@ -108,7 +108,9 @@ same conditions MUST apply during single component failures.
 The IXP MUST run any inter-switch links congestion free.
 
 The IXP SHOULD have redundant power feeds fed from discrete sources (A and B)
-for all exchange infrastructure. If the IXP does not have redundant power feeds on any components, it MUST describe where not on a publicly available website.
+for all exchange infrastructure. If the IXP does not have redundant power
+feeds on any components, it MUST describe where not on a publicly available
+website.
 
 If the IXP does not have full path diversity between two discrete switching
 elements in different physical locations, this MUST be described on the IXPs
