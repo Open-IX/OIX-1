@@ -11,7 +11,7 @@ information on what the participants of a certified IXP can expect, and
 not to describe in detail how the IXP is designed, built or operated. IXPs
 can comply with the Open-IX standards to serve different communities with
 different requirements, from a small single datacenter IXPs serving a local
-community to a large IXP locacted in multiple datacenters in a metro area.
+community to a large IXP located in multiple datacenters in a metro area.
 
 The keywords used throughout the document are as defined in RFC 2119.
 
@@ -20,18 +20,19 @@ Exchange, posted at <http://nabcop.org/index.php/Main_Page>.
 
 ## Definition of an IXP
 
-A physical network infrastructure operated by a single entity with the purpose
-to facilitate the exchange of Internet traffic between Autonomous Systems. The
-intention is to connect more than 2 Autonomous Systems, and there MUST be a
-clear and open policy for others to join.
+A physical network infrastructure operated by a single entity with the
+purpose to facilitate the exchange of Internet traffic between Autonomous
+Systems (ASs). The intention is to connect more than two ASs, and there
+MUST be a clear and open policy for others to join.
 
 
 ## Services
 
 ### Minimal Service Offering
 
-The IXP MUST provide the services described below. This in no way prevents the
-operator from providing additional services, or methods of interconnection.
+The IXP MUST provide the minimum services described below. This also
+allows the IXP operator to provide additional services, or methods of
+interconnection.
 
 #### Public Exchange VLAN (IX)
 
@@ -54,10 +55,9 @@ more than two parties the service MAY be best effort.
 ### Physical Interface
 
 The IXP MUST offer IEEE 802.3 Ethernet connectivity on a common switch
-infrastructure.
-
-Service offerings MAY be available at any other IEEE defined rate, including
-IEEE 802.3ad or IEEE 802.1AX link aggregation of any of these rates.
+infrastructure.  Service offerings MAY be available at any IEEE defined
+rate, including IEEE 802.3ad or IEEE 802.1AX link aggregation of any of
+these rates.
 
 The complete service offering MUST be described on a publicly available
 website. The information provided MUST contain: link rate and physical media
