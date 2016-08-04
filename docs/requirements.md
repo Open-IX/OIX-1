@@ -1,7 +1,7 @@
 
 # IXP Technical Requirements OIX-1
 
-Version 1.1, February 3, 2015
+Version 2.0 ***DRAFT***, August 3, 2016
 
 Questions: <ix-group@open-ix.org>
 
