@@ -64,7 +64,8 @@ Service offerings MAY be available at any other IEEE defined rate, including
 
 The complete service offering MUST be described on a publicly available
 website. The information provided MUST contain: link rate and physical media
-(copper, fiber and fiber type). The information SHOULD describe how each port type is connected to the fabric.
+(copper, fiber and fiber type). The information SHOULD describe how each port
+type is connected to the fabric.
 
 ### Traffic Forwarding
 
