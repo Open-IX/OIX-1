@@ -5,40 +5,38 @@ Version 2.0 ***DRAFT***, August 3, 2016
 
 Questions: <ix-group@open-ix.org>
 
-Following outlines the technical requirements for an IXP to be certified by
-Open-IX. The requirements define minimum functionality, such that IXPs can
-adhere to the Open-IX standard serving different communities with different
-requirements. Varying from small single datacenter IXPs serving a limited
-local community to large scale many datacenter metro environments, but leave
-room for modifications that meet the need of the local community. The purpose
-of the requirements is to provide publicly available information on what the
-participants of the IXP can expect, and not to describe in detail how the IXP
-is designed, built or operated.
+This standard defines the technical requirements for an IXP to be certified
+by Open-IX. The purpose of the requirements is to provide publicly available
+information on what the participants of a certified IXP can expect, and
+not to describe in detail how the IXP is designed, built or operated. IXPs
+can comply with the Open-IX standards to serve different communities with
+different requirements, from a small single datacenter IXPs serving a local
+community to a large IXP located in multiple datacenters in a metro area.
 
 The keywords used throughout the document are as defined in RFC 2119.
 
 The IXP SHOULD follow the Best Current Operational Practices for an Internet
 Exchange, posted at <http://nabcop.org/index.php/Main_Page>.
 
+## Definition of an IXP
 
-## Definition of an IXP.
-
-A physical network infrastructure operated by a single entity with the purpose
-to facilitate the exchange of Internet traffic between Autonomous Systems. The
-intention is to connect more than 2 Autonomous Systems, and there MUST be a
-clear and open policy for others to join.
+A physical network infrastructure operated by a single entity with the
+purpose to facilitate the exchange of Internet traffic between Autonomous
+Systems (ASs). The intention is to connect more than two ASs, and there
+MUST be a clear and open policy for others to join.
 
 
 ## Services
 
 ### Minimal Service Offering
 
-The IXP MUST provide the services described below. This in no way inhibits the
-operator from providing additional services, or methods of interconnection.
+The IXP MUST provide the minimum services described below. This also
+allows the IXP operator to provide additional services, or methods of
+interconnection.
 
 #### Public Exchange VLAN (IX)
 
-A switch platform which allows anytoany interconnection. Customer interfaces
+A switch platform which allows any-to-any interconnection. Customer interfaces
 with Ethernet frames tagged for the public exchange VLAN MUST be forwarded in
 accordance with the traffic rules indicated in this document.
 
@@ -56,11 +54,10 @@ more than two parties the service MAY be best effort.
 
 ### Physical Interface
 
-The IXP MUST be able to offer IEEE 802.3 Ethernet connectivity on a common
-switch infrastructure.
-
-Service offerings MAY be available at any other IEEE defined rate, including
-802.3ad link aggregation of any of these rates.
+The IXP MUST offer IEEE 802.3 Ethernet connectivity on a common switch
+infrastructure.  Service offerings MAY be available at any IEEE defined
+rate, including IEEE 802.3ad or IEEE 802.1AX link aggregation of any of
+these rates.
 
 The complete service offering MUST be described on a publicly available
 website. The information provided MUST contain: link rate and physical media
@@ -75,8 +72,8 @@ The IXP MUST forward frames with the following Ethertypes:
 - 0x86dd IPv6
 
 Valid frames with Ethertype 0x86dd may be suppressed on the Public Exchange
-VLAN due to MLD snooping, or alternate methods used to implement IPv6 neighbor
-discovery.
+VLAN using snooping, or alternate methods used to implement IPv6 Neighbor
+Discovery.
 
 If there is no provision to handle ARP in any other way, the IXP MUST forward
 frames with the following Ethertype:
@@ -120,20 +117,20 @@ publicly available website.
 The IXP MUST describe on a publicly available website the infrastructure and
 the redundancy measures implemented to overcome single component failures.
 
-### IP Space
+### IP Address Space
 
 In order to be independent of any of the connected parties, the IP space used
 on the “Public Exchange VLAN” MUST be PI space or other IP space directly
-assigned by a RIR. This applies to both IPv4 and IPv6. The IXP operator will
-be responsible for obtaining address space from the respective RIR, as well as
+assigned by a RIR. This applies to both IPv4 and IPv6. The IXP operator 
+is responsible for obtaining address space from the respective RIR, as well as
 providing all material for justification, documentation, and applicable fees
 as required by the RIR.
 
 ### Route Server
 
-If a route server service is offered then it MUST support both IPv4 and IPv6
-and 4byte ASNs. The AS number used for the route server implementation MUST be
-a unique AS number assigned by one of the RIRs.
+If a route server service is offered then it MUST support both IPv4 and
+IPv6, and 16-bit and 32-bit ASNs. The AS number used for the route server
+implementation MUST be a unique AS number assigned by one of the RIRs.
 
 The IXP MUST publish the route server setup on a publicly available website.
 
@@ -180,5 +177,5 @@ least the subjects mentioned in this document MUST be addressed.
 ## Miscellaneous
 
 The IXP MUST have and maintain an accurate entry in a peering contact and
-configuration directory. This entry MUST contain a list of all facilities they are present at.
-
+configuration directory such as <https://www.peeringdb.com>. This entry
+MUST contain a list of all facilities with a point of presence.
